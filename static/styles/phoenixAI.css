@@ -111,6 +111,9 @@
   height: 100%;
 }
 
+.form {
+  width: 100%;
+}
 .input {
   background-color: white;
   border: 1px solid #ccc;
@@ -121,6 +124,7 @@
   box-sizing: border-box;
   outline: none; 
   margin-left: 8%;
+  margin-left: 20%;
 }
 
 .input:focus {

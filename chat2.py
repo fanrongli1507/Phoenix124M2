@@ -44,6 +44,7 @@ def generate_text(prompt, max_length=1000):
 @app.route("/")
 def index():
     conversations = Conversation.query.all()
+    print(conversations)
     return render_template("index.html", Conversation=conversations)
 
 
@@ -67,5 +68,4 @@ with app.app_context():
     db.create_all()
 
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=5000)
-      
+    app.run(debug=True)
